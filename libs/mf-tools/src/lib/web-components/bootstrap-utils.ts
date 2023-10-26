@@ -41,7 +41,7 @@ export type Options = {
   /**
    * Deactivate support for legacy mode.
    * Only recommanded if all used implementations depend on
-   * @angular-architects/module-federation-tools > 13.0.1.
+   * @agorapulse/module-federation-tools > 13.0.1.
    * Default value true.
    */
   activeLegacyMode?: boolean;

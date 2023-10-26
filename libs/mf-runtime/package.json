@@ -1,5 +1,5 @@
 {
-  "name": "@angular-architects/module-federation-runtime",
+  "name": "@agorapulse/module-federation-runtime",
   "license": "MIT",
   "version": "16.0.4",
   "peerDependencies": {

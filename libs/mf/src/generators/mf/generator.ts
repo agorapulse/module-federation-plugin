@@ -63,7 +63,7 @@ export default async function (host: Tree, options: MfGeneratorSchema) {
     sourceRoot: `${normalizedOptions.projectRoot}/src`,
     targets: {
       build: {
-        executor: '@angular-architects/mf:build',
+        executor: '@agorapulse/mf:build',
       },
     },
     tags: normalizedOptions.parsedTags,

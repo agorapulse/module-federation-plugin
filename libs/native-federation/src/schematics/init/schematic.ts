@@ -116,7 +116,7 @@ function updateWorkspaceConfig(
   projectConfig.architect.esbuild = originalBuild;
 
   projectConfig.architect.build = {
-    builder: '@angular-architects/native-federation:build',
+    builder: '@agorapulse/native-federation:build',
     options: {},
     configurations: {
       production: {
@@ -133,7 +133,7 @@ function updateWorkspaceConfig(
   projectConfig.architect['serve-original'] = projectConfig.architect.serve;
 
   projectConfig.architect.serve = {
-    builder: '@angular-architects/native-federation:build',
+    builder: '@agorapulse/native-federation:build',
     options: {
       target: `${projectName}:esbuild:development`,
       rebuildDelay: 0,
@@ -287,7 +287,7 @@ function makeMainAsync(
 
     let newMainContent = '';
     if (options.type === 'dynamic-host') {
-      newMainContent = `import { initFederation } from '@angular-architects/native-federation';
+      newMainContent = `import { initFederation } from '@agorapulse/native-federation';
 
 initFederation('/assets/federation.manifest.json')
   .catch(err => console.error(err))
@@ -296,7 +296,7 @@ initFederation('/assets/federation.manifest.json')
 `;
     } else if (options.type === 'host') {
       const manifest = JSON.stringify(remoteMap, null, 2).replace(/"/g, "'");
-      newMainContent = `import { initFederation } from '@angular-architects/native-federation';
+      newMainContent = `import { initFederation } from '@agorapulse/native-federation';
 
 initFederation(${manifest})
   .catch(err => console.error(err))
@@ -304,7 +304,7 @@ initFederation(${manifest})
   .catch(err => console.error(err));
 `;
     } else {
-      newMainContent = `import { initFederation } from '@angular-architects/native-federation';
+      newMainContent = `import { initFederation } from '@agorapulse/native-federation';
 
 initFederation()
   .catch(err => console.error(err))

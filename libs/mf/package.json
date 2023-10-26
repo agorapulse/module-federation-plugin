@@ -1,5 +1,5 @@
 {
-  "name": "@angular-architects/module-federation",
+  "name": "@agorapulse/module-federation",
   "version": "16.0.4",
   "license": "MIT",
   "repository": {
@@ -17,7 +17,7 @@
   "schematics": "./collection.json",
   "builders": "./builders.json",
   "dependencies": {
-    "@angular-architects/module-federation-runtime": "16.0.4",
+    "@agorapulse/module-federation-runtime": "16.0.4",
     "word-wrap": "^1.2.3",
     "callsite": "^1.0.0",
     "node-fetch": "^2.6.7",
@@ -27,7 +27,7 @@
   "ng-update": {
     "migrations": "./migrations.json",
     "package-group": [
-      "@angular-architects/module-federation-tools",
+      "@agorapulse/module-federation-tools",
       "ngx-build-plus"
     ]
   }

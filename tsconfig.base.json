@@ -16,20 +16,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@angular-architects/build_angular": ["libs/build-angular/src/index.ts"],
-      "@angular-architects/module-federation": ["libs/mf/src/index.ts"],
-      "@angular-architects/module-federation-runtime": [
-        "libs/mf-runtime/src/index.ts"
-      ],
-      "@angular-architects/module-federation-tools": [
-        "libs/mf-tools/src/index.ts"
-      ],
-      "@angular-architects/native-federation": [
-        "libs/native-federation/src/index.ts"
-      ],
-      "@angular-architects/playground-lib": [
-        "libs/playground-lib/src/index.ts"
-      ],
+      "@agorapulse/build_angular": ["libs/build-angular/src/index.ts"],
+      "@agorapulse/module-federation": ["libs/mf/src/index.ts"],
+      "@agorapulse/module-federation-runtime": ["libs/mf-runtime/src/index.ts"],
+      "@agorapulse/module-federation-tools": ["libs/mf-tools/src/index.ts"],
+      "@agorapulse/native-federation": ["libs/native-federation/src/index.ts"],
+      "@agorapulse/playground-lib": ["libs/playground-lib/src/index.ts"],
       "@softarc/native-federation": [
         "libs/native-federation-core/src/index.ts"
       ],

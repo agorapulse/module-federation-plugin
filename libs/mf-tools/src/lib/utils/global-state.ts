@@ -1,4 +1,4 @@
-export const packageNamespace = '@angular-architects/module-federation-tools';
+export const packageNamespace = '@agorapulse/module-federation-tools';
 
 function getGlobalState<T>(): T {
   const globalState = window as unknown as { [packageNamespace]: T };

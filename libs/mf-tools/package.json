@@ -1,12 +1,12 @@
 {
-  "name": "@angular-architects/module-federation-tools",
+  "name": "@agorapulse/module-federation-tools",
   "version": "16.0.4",
   "license": "MIT",
   "peerDependencies": {
     "@angular/common": ">=16.0.0",
     "@angular/core": ">=16.0.0",
     "@angular/router": ">=16.0.0",
-    "@angular-architects/module-federation": "^16.0.0",
+    "@agorapulse/module-federation": "^16.0.0",
     "@angular/platform-browser": ">=16.0.0",
     "rxjs": ">= 6.0.0"
   },

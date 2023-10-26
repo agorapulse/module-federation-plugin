@@ -99,8 +99,8 @@ function lookupVersionInMap(key: string, versions: VersionMap): string | null {
     key = parts[0];
   }
 
-  if (key.toLowerCase() === '@angular-architects/module-federation-runtime') {
-    key = '@angular-architects/module-federation';
+  if (key.toLowerCase() === '@agorapulse/module-federation-runtime') {
+    key = '@agorapulse/module-federation';
   }
 
   if (!versions[key]) {

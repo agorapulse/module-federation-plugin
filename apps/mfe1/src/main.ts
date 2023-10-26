@@ -1,4 +1,4 @@
-import { initFederation } from '@angular-architects/native-federation';
+import { initFederation } from '@agorapulse/native-federation';
 
 initFederation()
   .then(() => import('./bootstrap'))
