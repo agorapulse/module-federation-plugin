@@ -1,5 +1,5 @@
-import { loadRemoteModule } from '@angular-architects/native-federation';
-import { AuthService } from '@angular-architects/playground-lib';
+import { loadRemoteModule } from '@agorapulse/native-federation';
+import { AuthService } from '@agorapulse/playground-lib';
 import { Component, Type } from '@angular/core';
 
 @Component({

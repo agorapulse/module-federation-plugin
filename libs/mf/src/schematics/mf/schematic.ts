@@ -42,7 +42,7 @@ export function adjustSSR(sourceRoot: string, ssrMappings: string): Rule {
     let content = tree.read(server).toString('utf-8');
 
     const imports = `import { CustomResourceLoader } from '@nguniversal/common/clover/server/src/custom-resource-loader';
-import { createFetch } from '@angular-architects/module-federation/nguniversal';
+import { createFetch } from '@agorapulse/module-federation/nguniversal';
 `;
 
     content = imports + content;
@@ -84,7 +84,7 @@ function makeMainAsync(main: string, options: MfSchematicSchema): Rule {
 
     let newMainContent = '';
     if (options.type === 'dynamic-host') {
-      newMainContent = `import { initFederation } from '@angular-architects/module-federation';
+      newMainContent = `import { initFederation } from '@agorapulse/module-federation';
 
 initFederation('/assets/mf.manifest.json')
   .catch(err => console.error(err))
@@ -127,7 +127,7 @@ function updatePackageJson(tree: Tree): void {
 
   if (!packageJson.scripts['run:all']) {
     packageJson.scripts['run:all'] =
-      'node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js';
+      'node node_modules/@agorapulse/module-federation/src/server/mf-dev-server.js';
   }
 
   tree.overwrite('package.json', JSON.stringify(packageJson, null, 2));

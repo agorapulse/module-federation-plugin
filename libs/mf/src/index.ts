@@ -1,1 +1,1 @@
-export * from '@angular-architects/module-federation-runtime';
+export * from '@agorapulse/module-federation-runtime';

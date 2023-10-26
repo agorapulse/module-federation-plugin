@@ -15,7 +15,7 @@ describe('native-federation e2e', () => {
   // are not dependant on one another.
   beforeAll(() => {
     ensureNxProject(
-      '@angular-architects/native-federation',
+      '@agorapulse/native-federation',
       'dist/libs/native-federation'
     );
   });
@@ -29,7 +29,7 @@ describe('native-federation e2e', () => {
   it('should create native-federation', async () => {
     const project = uniq('native-federation');
     await runNxCommandAsync(
-      `generate @angular-architects/native-federation:native-federation ${project}`
+      `generate @agorapulse/native-federation:native-federation ${project}`
     );
     const result = await runNxCommandAsync(`build ${project}`);
     expect(result.stdout).toContain('Executor ran');
@@ -39,7 +39,7 @@ describe('native-federation e2e', () => {
     it('should create src in the specified directory', async () => {
       const project = uniq('native-federation');
       await runNxCommandAsync(
-        `generate @angular-architects/native-federation:native-federation ${project} --directory subdir`
+        `generate @agorapulse/native-federation:native-federation ${project} --directory subdir`
       );
       expect(() =>
         checkFilesExist(`libs/subdir/${project}/src/index.ts`)
@@ -51,11 +51,11 @@ describe('native-federation e2e', () => {
     it('should add tags to the project', async () => {
       const projectName = uniq('native-federation');
       ensureNxProject(
-        '@angular-architects/native-federation',
+        '@agorapulse/native-federation',
         'dist/libs/native-federation'
       );
       await runNxCommandAsync(
-        `generate @angular-architects/native-federation:native-federation ${projectName} --tags e2etag,e2ePackage`
+        `generate @agorapulse/native-federation:native-federation ${projectName} --tags e2etag,e2ePackage`
       );
       const project = readJson(`libs/${projectName}/project.json`);
       expect(project.tags).toEqual(['e2etag', 'e2ePackage']);

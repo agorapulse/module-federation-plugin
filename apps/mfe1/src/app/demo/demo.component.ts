@@ -1,7 +1,4 @@
-import {
-  AuthService,
-  PlaygroundLibModule,
-} from '@angular-architects/playground-lib';
+import { AuthService, PlaygroundLibModule } from '@agorapulse/playground-lib';
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
